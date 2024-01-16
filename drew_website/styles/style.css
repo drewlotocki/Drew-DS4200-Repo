@@ -1,0 +1,54 @@
+/* Style Guide for the html page */
+html {
+  font-size: 10px; /* px means "pixels": the base font size is now 10 pixels high */
+  font-family: "Times New Roman", Serif; /* this should be the rest of the output you got from Google Fonts */
+  background-color: #94908b;
+}
+
+/* Sets the style of the headers, combined all header items for ease*/
+h1 {
+  font-size: 60px;
+  text-align: center;
+  margin: 0;
+  padding: 20px 0;
+  color: #d4664a;
+  text-shadow: 3px 3px 1px black;
+}
+
+  h2 {
+    font-size: 16px;
+    text-align: left;
+    color: #d4664a;
+    text-shadow: 1px 1px 1px black;
+}
+
+/* Sets the style of the headers and list items*/
+p,
+li {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 1px;
+}
+
+/* Sets the color and style of the body of the page*/
+body {
+  width: 600px;
+  margin: 0 auto;
+  background-color: #a3b8c9;
+  padding: 0 20px 20px 20px;
+  border: 5px solid black;
+}
+
+/* Sets the image charecterisitcs*/
+img {
+  display: block;
+  margin: 0 auto;
+  width: 200px; 
+}
+
+/* Styles the button*/
+button {
+  background-color:#a3b8c9;
+  font-size: 16px;
+  text-align: center
+}
