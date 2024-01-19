@@ -28,7 +28,7 @@ function setUserName() {
     setUserName();
   } else {
     localStorage.setItem('name', myName);
-    myHeading.innerHTML = myName + ', This is Why You Should Hire Drew Lotocki';
+    myHeading.innerHTML = myName + ', This is Everything you Need to Know about Drew Lotocki';
   }
 }
 
@@ -37,7 +37,7 @@ if(!localStorage.getItem('name')) {
   setUserName();
 } else {
   let storedName = localStorage.getItem('name');
-  myHeading.innerHTML = storedName + ', This is Why You Should Hire Drew Lotocki';
+  myHeading.innerHTML = storedName + ', This is Everything you Need to Know about Drew Lotocki';
 }
 
 // Funtions to change background color
