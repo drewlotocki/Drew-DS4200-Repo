@@ -28,7 +28,7 @@ function setUserName() {
     setUserName();
   } else {
     localStorage.setItem('name', myName);
-    myHeading.innerHTML = myName + ' This is Why You Should Hire Drew';
+    myHeading.innerHTML = myName + ', This is Why You Should Hire Drew Lotocki';
   }
 }
 
@@ -37,21 +37,23 @@ if(!localStorage.getItem('name')) {
   setUserName();
 } else {
   let storedName = localStorage.getItem('name');
-  myHeading.innerHTML = storedName + ' This is Why You Should Hire Drew';
+  myHeading.innerHTML = storedName + ', This is Why You Should Hire Drew Lotocki';
 }
 
 // Funtions to change background color
 function backgroundColor() {
-  if (document.innerHTML.style.background === "rgb(148, 144, 139)") {
-      document.innerHTML.style.background = "red";
-  } else if (document.innerHTML.style.background === "red") {
-      document.innerHTML.style.background = "green"; 
+  if (document.body.style.background === "rgb(148, 144, 139)") {
+      document.body.style.background = "rgb(217, 196, 141)";
+  } else if (document.body.style.background === 'rgb(217, 196, 141)') {
+      document.body.style.background = 'rgb(207, 143, 155)';
+  } else if (document.body.style.background === 'rgb(207, 143, 155)') {
+      document.body.style.background = 'rgb(163,184,201)'; 
   } else {
-      document.inerHTML.style.background = "red";
+      document.body.style.background = "rgb(148, 144, 139)";
   }
 }
 
-// Runs the function on click
+// Runs the functions when each button is clicked
 nameButton.onclick = function() {
   setUserName();
 }
